@@ -1,0 +1,24 @@
+@import '../base/variables';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $button-background-color;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  color: $button-color;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+
+  &:focus {
+    outline: none;
+  }
+  
+  &:hover {
+    background: darken($color: $button-background-color, $amount: 10);
+  }
+}

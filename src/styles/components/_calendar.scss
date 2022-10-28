@@ -1,0 +1,35 @@
+@import '../base/variables';
+
+.buttonContainer {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+ .dayItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+.menu-item {
+  padding: 0 4px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  border: 1px blue solid;
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+.menu-item.today {
+  & .text {
+    border-bottom: 4px solid #349eeb;
+  }
+}
+.scroll-menu-arrow {
+  padding: 10px;
+  cursor: pointer;
+}
